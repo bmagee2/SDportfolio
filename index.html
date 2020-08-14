@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b magee portfolio</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8cfc683572.js" crossorigin="anonymous"></script>
+    <!-- HTML PAGES -->
+    <link href="./about.html" />
+    <link href="./contact.html" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div id="nav-container" >
+        <nav class="navbar navbar-expand-sm navbar-light .fixed-right">
+          <!-- <div id="nav-container" > -->
+            <!-- <nav>
+              <div>
+                <h2>b. magee</h2>
+              </div>
+              <ul>
+                <li class="nav-item"><a class="nav-link" href="#skills"><button type="button" class="btn btn-primary">Primary</button></a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills"><button onclick="on()">skills</button></a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills"><button onclick="on()">skills</button></a></li>
+              </ul>
+            </nav> -->
+            <!-- </div> -->
+            <div >
+                <a class="name" href="#home"><h2>b. magee</h2> </a>
+            </div>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse .fixed-right" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects"><button>
+                    projects
+                  </button></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html"><button>about</button></a>
+                  <!-- <button onclick="on()">contact</button> -->
+                  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    skills
+                  </button> -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html"><button >contact</button></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+        
+
+    <!-- HOME PAGE -->
+  <section id="home">
+    <div class="content-container"> 
+      <div id="home-container">
+        <!-- <div class="row"> -->
+          <div class="col-md-6">
+            <h1>animation</h1>
+            <div class="box">this is a box</div>
+          </div>
+          <div class="col-md-6">
+            <h1>hello</h1>
+          </div>
+        <!-- </div> -->
+      </div>
+  </section>
+
+
+    <a href="./new.html">new page here</a>
+
+  <section id="projects">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-4 col-sm-9">
+              <a class="project-sample" href="https://codepen.io/bmagee02/pen/bGVREPX" target="blank" width="100%"> <img src="assests/css creature.png" alt="" class="project-photo" width="100%" height="auto"></a>
+              <p class="project-text"><b>css creature</b></p>
+          </div>
+          <div class="col-md-4 col-sm-9">
+              <a class="project-sample" href="https://bmagee2.github.io/static/" target="blank" width="100%"> <img src="assests/static.png" alt="" class="project-photo" width="100%" height="auto"></a>
+              <p class="project-text"><b>static website</b></p>
+          </div>
+          <div class="col-md-4 col-sm-9">
+            <a class="project-sample" href="https://bmagee2.github.io/API/" target="blank" width="100%"> <img src="assests/API.png" alt="" class="project-photo" width="100%" height="auto"></a>
+            <p class="project-text"><b>API challenge</b></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-9">
+              <a class="project-sample" href="https://codepen.io/bmagee02/pen/bGVREPX" target="blank" width="100%"> <img src="assests/css creature.png" alt="" class="project-photo" width="100%" height="auto"></a>
+              <p class="project-text"><b>css creature</b></p>
+          </div>
+          <div class="col-md-4 col-sm-9">
+              <a class="project-sample" href="https://bmagee2.github.io/static/" target="blank" width="100%"> <img src="assests/static.png" alt="" class="project-photo" width="100%" height="auto"></a>
+              <p class="project-text"><b>static website</b></p>
+          </div>
+          <div class="col-md-4 col-sm-9">
+            <a class="project-sample" href="https://bmagee2.github.io/API/" target="blank" width="100%"> <img src="assests/API.png" alt="" class="project-photo" width="100%" height="auto"></a>
+            <p class="project-text"><b>API challenge</b></p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+    <div id="skills" onclick="off()">
+        <p>another overlay</p>
+    </div>
+<!-- 
+    <div style="padding:20px">
+      <h2>Overlay</h2>
+      <p>Add an overlay effect to the page content (100% width and height with a black background color with 50% opacity).</p>
+      <button onclick="on()">Turn on overlay effect</button>
+    </div> -->
+    
+    <script>
+    function on() {
+      document.getElementById("skills").style.display = "block";
+    }
+    
+    function off() {
+      document.getElementById("skills").style.display = "none";
+    }
+    </script>
+
+<!-- <script>
+    function on() {
+      document.getElementById("overlay-2").style.display = "block";
+    }
+    
+    function off() {
+      document.getElementById("overlay-2").style.display = "none";
+    }
+    </script> -->
+
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">
+    button
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header-1">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div id="contact-form">
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+                    <fieldset id="fs-frm-inputs">
+                      <label for="full-name">name</label>
+                      <input type="text" name="name" id="full-name" placeholder="first and last" required="">
+                      <label for="email-address">email address</label>
+                      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+                      <label for="message">message</label>
+                      <textarea rows="5" name="message" id="message" placeholder="your message here!" required=""></textarea>
+                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    </fieldset>
+                    <input type="submit" value="send">
+                  </form>
+                </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- SKILLS MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog .modal-dialog-scrollable" id="modal-2">
+      <div class="modal-content" id="modal-content-skills">
+        <div class="modal-header-2">
+          <h5 class="modal-title" id="exampleModalLabel">SKILLS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="close-button" aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body .container">
+            <div class="container" col-md-12>
+                <div class="row">
+                    <div class="column">column 1</div>
+                    <div class="column">column 2</div>
+                    <div class="column">column 3</div>
+                  </div>     
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog .modal-dialog-scrollable" id="modal-1">
+      <div class="modal-content" >
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">CONTACT</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="close-button" aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body .container">
+            <div class="section-header">
+                <h2>contact</h2>
+            </div>
+            <div id="contact-form">
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <label for="full-name">name</label>
+                  <input type="text" name="name" id="full-name" placeholder="first and last" required="">
+                  <label for="email-address">email address</label>
+                  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+                  <label for="message">message</label>
+                  <textarea rows="5" name="message" id="message" placeholder="your message here!" required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="send">
+              </form>
+            </div>
+            <!-- <div class="container" col-md-12>
+                <div class="row">
+                    <div class="column">column 1</div>
+                    <div class="column">column 2</div>
+                    <div class="column">column 3</div>
+                  </div>     
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- FOOTER -->
+   <footer>
+    <div id="social-container">
+    <div class="empty-column"></div>   
+    <div class="linkedin"><a href="https://linkedin.com/in/brittanymageeprofile" target="black"><i class="fab fa-linkedin-in"></i></a></div>
+    <div class="github"><a href="https://github.com/bmagee2" target="black"><i class="fab fa-github"></i></a></div>  
+    <div class="empty-column"></div> 
+    </div>
+    <p>©2020 brittany magee. all rights reserved.</p>
+  </footer>
+    <!-- <footer>
+        <div id="social-container">
+        <div class="empty-column"></div>   
+        <div class="linkedin"><a href="https://linkedin.com/in/brittanymageeprofile" target="black"><i class="fab fa-linkedin-in"><abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></i></a>
+        </abbr></div>
+
+        <div class="linkedin"><abbr class="tool-tip-icon-1" data-placement="top"><a href="https://linkedin.com/in/brittanymageeprofile" ><span class="text" ></span><i class="fab fa-linkedin-in"></i></a><span class="tool-tip-text" >Share on Facebook</span></abbr></div>
+        
+    </div>
+
+
+        <a href="https://devhints.io/bash" target="black"><p class="box-font">bash <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <div class="github"><a href="https://github.com/bmagee2" target="black"><i class="fab fa-github"></i></a></div>  
+        <div class="empty-column"></div> 
+        </div>
+        <p>©2020 brittany magee. all rights reserved.</p>
+    </footer> -->
+
+  <!-- CONTENT-CONTAINER ENDING DIV -->
+  </div>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+</body>
+</html>
