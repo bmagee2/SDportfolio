@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
-    <a href="./index.html"><button>back</button></a>
-    <h1>contact</h1>
+<body id="contact">
+    <div id="contact-container">
+        <div class="close"><a href="./index.html"><img src="./assets/close.png" class="close-button" alt="" width="40px" height="40px"></a></div>
+        <div class="section-header">
+            <h2>contact</h2>
+        </div>
+        <div id="contact-form">
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">name</label>
+              <input type="text" name="name" id="full-name" placeholder="first and last" required="">
+              <label for="email-address">email address</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+              <label for="message">message</label>
+              <textarea rows="5" name="message" id="message" placeholder="your message here!" required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input type="submit" value="send">
+          </form>
+        </div>
+    </div>
 </body>
 </html>
